@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- ツールバーをセット （androidx） -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        app:title=""
+        android:background="@color/purple_700"
+        app:layout_constraintTop_toTopOf="parent "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        tools:context=".MainActivity">
+        <!-- 1行目 -->
+        <TableRow>
+            <TextView
+                android:text="時刻"
+                android:padding="3dip" />
+            <TextView
+                android:text="　　    "
+                android:gravity="right"
+                android:padding="3dip" />
+            <TextView
+                android:text="　　     switch"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+        <!-- 2行目 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="170dp"
+                android:padding="3dip"
+                android:text="音＋明るくする目覚まし" />
+
+        </TableRow>
+        <!-- 3行目 -->
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="168dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="click me" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:padding="3dip"
+                android:text="" />
+            <Switch
+                android:id="@+id/alarm_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                />
+        </TableRow>
+
+        <!-- 2行目 -->
+
+        <TextView
+            android:layout_width="155dp"
+            android:padding="3dip"
+            android:text="光目覚まし" />
+        <!-- 3行目 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="click me" />
+            <TextView
+                android:layout_width="15dp"
+                android:padding="3dip"
+                android:text="" />
+            <Switch
+                android:id="@+id/alarm_switch2"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+        </TableRow>
+
+        <!--  -->
+
+    </TableLayout>
+
+    <!--
+別に複数行でも構いません。
+こんな感じに。。
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="me.hiroaki.alarmsample.MainActivity"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+            <Switch
+                android:id="@+id/alarm_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="279dp"
+                android:layout_marginTop="173dp" />
+
+
+            <Switch
+                android:id="@+id/alarm_switch2"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="297dp"
+                android:layout_marginTop="319dp" />
+
+
+    <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="49dp"
+                android:layout_marginTop="162dp"
+                android:layout_marginBottom="40dp"
+                android:text="click me" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="280dp"
+                android:layout_marginBottom="40dp"
+                android:text="click me" />
+
+
+    </RelativeLayout>
+    -->
+</androidx.constraintlayout.widget.ConstraintLayout>
